@@ -526,7 +526,6 @@ mitigations** to compare the baseline against every `fairlearn` method at once.
 
 with gr.Blocks(
     title="ML Fairness Audit",
-    theme=gr.themes.Soft(primary_hue="indigo", secondary_hue="slate"),
 ) as demo:
     gr.Markdown(INTRO)
 
@@ -616,4 +615,4 @@ with gr.Blocks(
 
 
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(theme=gr.themes.Soft(primary_hue="indigo", secondary_hue="slate"))
