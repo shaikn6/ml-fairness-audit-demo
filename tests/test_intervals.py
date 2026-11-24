@@ -44,7 +44,6 @@ def test_unconfirmed_finding_is_downgraded_and_explained():
          "dpd": [0.0, 0.2], "eod": [0.0, 0.05], "dir": [1.0, 0.78]},
         index=["ref", "grp"],
     )
-    cols = ["dir", "dpd", "eod"]
     wide = pd.DataFrame({f"{c}_{e}": [0.0, v] for c, (lo, hi) in
                          {"dir": (0.6, 0.95), "dpd": (0.05, 0.3), "eod": (0.0, 0.1)}.items()
                          for e, v in (("lo", lo), ("hi", hi))}, index=["ref", "grp"])
