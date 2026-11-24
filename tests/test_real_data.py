@@ -1,10 +1,8 @@
 """The real UCI Adult path must load, keep its schema, and surface real bias."""
-import numpy as np
 import pandas as pd
 import pytest
 
 import app
-from audit import real_data
 from audit.real_data import (
     ADULT_FEATURE_COLUMNS,
     ADULT_LABEL_COL,

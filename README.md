@@ -1,5 +1,7 @@
 # ⚖️ ML Fairness Audit
 
+[![CI](https://github.com/shaikn6/ml-fairness-audit-demo/actions/workflows/ci.yml/badge.svg)](https://github.com/shaikn6/ml-fairness-audit-demo/actions/workflows/ci.yml)
+
 **Audits a classifier for disparate impact on the real UCI Adult Income dataset. A scorecard trained on it fails the 4/5ths rule for women and for several racial groups, exposes compounded bias under intersectional (sex × race) analysis, and marks breaches inside sampling noise INCONCLUSIVE using 95% bootstrap intervals.**
 
 Interactive demo of the **genuine** fairness-audit engine from
@@ -120,3 +122,11 @@ no external API keys.
 ---
 
 Source: the Files tab of this Space
+
+## Run locally
+
+```bash
+pip install -r requirements.txt pytest
+python app.py
+python -m pytest -q
+```
